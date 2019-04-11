@@ -2,7 +2,7 @@
   "name": "firstreactapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kshanti108.github.io/firstreactapp",
+  "homepage": "https://kshanti108.github.io/FirstReactApp",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
