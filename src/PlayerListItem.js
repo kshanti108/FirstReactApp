@@ -8,11 +8,13 @@ class PlayerListItem extends Component {
 		var item = this.props.player;
 		return (
 			<div>
-				<td>{item.position}</td>
-				<td>{item.name}</td>
-				<td>{item.club}</td>
-				<td>{item.salary}</td>
-				<td>{item.points}</td>
+				<tr>
+					<td width="20">{item.position}</td>
+					<td width="150">{item.name}</td>
+					<td width="50">{item.club}</td>
+					<td width="30">£{item.salary}k</td>
+					<td width="30">{item.seasonPoints}</td>
+				</tr>
 			</div>
 		);
 	}

@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
 //import './App.css';
-import PlayerListItem from './PlayerListItem.js';
+import PlayerList from './PlayerList.js';
 
 class App extends Component {
   constructor(props) {
 		super(props);
-		this.state = {
-      currentPlayer: {
-        name:"L Coote",
-        position:"FB",
-        salary:"200",
-        club:"STH",
-        seasonPoints:45,
-        teamNo:1
-      }
+    var player1 = {
+      name:"L Coote",
+      position:"FB",
+      salary:"200",
+      club:"STH",
+      seasonPoints:45,
+      teamNo:"01"
     };
+    var player2 = {
+      name:"S Ratchford",
+      position:"FB",
+      salary:"250",
+      club:"WAR",
+      seasonPoints:63,
+      teamNo:""
+    };
+    this.state = {players: [player1, player2]};
 	}
 
   render() {
     return (
       <div className="App">
-        <table>
-          <tr>
-            <PlayerListItem player={this.state.currentPlayer} />
-          </tr>
-        </table>
+            <PlayerList players={this.state.players} />
       </div>
     );
   }
